@@ -62,12 +62,12 @@ void setup () {
 // == Arduino Loop =============================
 
 void loop () {
-  pushCommand(MAX7219_REG_DIGIT0, 1*1<<7 | 0*1<<6 | 0*1<<5 | 0*1<<4 | 0*1<<3 | 0*1<<2 | 0*1<<1 | 0*1<<0); //Light upper left LED..
-  pushCommand(MAX7219_REG_DIGIT1, 0*1<<7 | 0*1<<6 | 0*1<<5 | 0*1<<4 | 0*1<<3 | 0*1<<2 | 0*1<<1 | 0*1<<0);
-  pushCommand(MAX7219_REG_DIGIT2, 0*1<<7 | 0*1<<6 | 0*1<<5 | 0*1<<4 | 0*1<<3 | 0*1<<2 | 0*1<<1 | 0*1<<0);
-  pushCommand(MAX7219_REG_DIGIT3, 0*1<<7 | 0*1<<6 | 0*1<<5 | 0*1<<4 | 0*1<<3 | 0*1<<2 | 0*1<<1 | 0*1<<0);
-  pushCommand(MAX7219_REG_DIGIT4, 0*1<<7 | 0*1<<6 | 0*1<<5 | 0*1<<4 | 0*1<<3 | 0*1<<2 | 0*1<<1 | 0*1<<0);
-  pushCommand(MAX7219_REG_DIGIT5, 0*1<<7 | 0*1<<6 | 0*1<<5 | 0*1<<4 | 0*1<<3 | 0*1<<2 | 0*1<<1 | 0*1<<0);
-  pushCommand(MAX7219_REG_DIGIT6, 0*1<<7 | 0*1<<6 | 0*1<<5 | 0*1<<4 | 0*1<<3 | 0*1<<2 | 0*1<<1 | 0*1<<0);
-  pushCommand(MAX7219_REG_DIGIT7, 0*1<<7 | 0*1<<6 | 0*1<<5 | 0*1<<4 | 0*1<<3 | 0*1<<2 | 0*1<<1 | 1*1<<0); //..and lower right LED
+  pushCommand(MAX7219_REG_DIGIT0, B10000000); //Light upper left LED..
+  pushCommand(MAX7219_REG_DIGIT1, B00000000);
+  pushCommand(MAX7219_REG_DIGIT2, B00000000);
+  pushCommand(MAX7219_REG_DIGIT3, B00000000);
+  pushCommand(MAX7219_REG_DIGIT4, B00000000);
+  pushCommand(MAX7219_REG_DIGIT5, B00000000);
+  pushCommand(MAX7219_REG_DIGIT6, B00000000);
+  pushCommand(MAX7219_REG_DIGIT7, B00000001); //..and lower right LED
 }
