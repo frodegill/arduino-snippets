@@ -2,9 +2,9 @@ static const int RED_PIN   = D1;
 static const int GREEN_PIN = D2;
 static const int BLUE_PIN  = D3;
 
-static const int DELAY = 5; //ms
+static const int DELAY = 1; //ms
 
-static const int MAX_COUNTER = 255;
+static const int MAX_COUNTER = 1023;
 int counter = MAX_COUNTER;
 
 int red_value;
